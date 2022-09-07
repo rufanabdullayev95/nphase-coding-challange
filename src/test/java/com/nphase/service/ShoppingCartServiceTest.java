@@ -20,7 +20,7 @@ public class ShoppingCartServiceTest {
                 new Product("Cheese", BigDecimal.valueOf(8), 2, 3, BigDecimal.valueOf(10), "Food")
         ));
 
-        BigDecimal result = service.calculatesPriceByRewardWithCategory(cart);
+        BigDecimal result = service.calculatePriceByRewardWithCategory(cart);
 
         Assertions.assertEquals(result, BigDecimal.valueOf(31.84));
     }

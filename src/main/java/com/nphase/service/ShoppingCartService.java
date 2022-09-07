@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class ShoppingCartService {
 
-    public BigDecimal calculatesPriceByRewardWithCategory(ShoppingCart shoppingCart) {
+    public BigDecimal calculatePriceByRewardWithCategory(ShoppingCart shoppingCart) {
         List<Product> products = shoppingCart.getProducts();
         Map<String, Integer> map = getProductQuantityAsMap(products);
 
